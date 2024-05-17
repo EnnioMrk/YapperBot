@@ -1,7 +1,7 @@
 # YapperBot: A Discord Bot for Fun and Games
 This document describes YapperBot, a Python Discord bot designed for entertainment purposes. The bot offers various interactive commands for users to enjoy.
 
-### Libraries
+## Libraries
 YapperBot utilizes the following libraries:
 
 discord: The core library for interacting with the Discord API.
