@@ -3,6 +3,7 @@ from discord.ext import commands
 import random
 import os
 
+
 # Intents
 intents = discord.Intents.all()
 intents.messages = True
@@ -200,4 +201,8 @@ async def buildheavy(ctx):
 
 discord_token = os.environ['DISCORD_TOKEN']
 
-bot.run(discord_token)
+while True:
+    try:
+        bot.run(discord_token)
+    except:
+        os.system("python YapperBot.py")
