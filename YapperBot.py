@@ -1,6 +1,7 @@
 import discord
 from discord.ext import commands
 import random
+import os
 
 # Intents
 intents = discord.Intents.all()
@@ -197,6 +198,6 @@ async def buildheavy(ctx):
     response = generate_build("Heavy")
     await ctx.send(response)
 
-discord_token = 'MTI0MDk2OTExMDIxMzYyMzgyOQ.GST74q.EbXZ0s9jUh3dCbpOcEKDGW_iTOrcuD-SDO7-dQ'
+discord_token = os.environ['DISCORD_TOKEN']
 
 bot.run(discord_token)
