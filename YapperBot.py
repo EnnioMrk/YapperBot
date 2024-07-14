@@ -2,7 +2,7 @@ import discord
 from discord.ext import commands
 import random
 import os
-
+from dotenv import load_dotenv
 
 # Intents
 intents = discord.Intents.all()
@@ -199,7 +199,8 @@ async def buildheavy(ctx):
     response = generate_build("Heavy")
     await ctx.send(response)
 
-discord_token = os.environ['DISCORD_TOKEN']
+load_dotenv()
+discord_token = os.getenv('DISCORD_TOKEN')
 
 while True:
     try:
